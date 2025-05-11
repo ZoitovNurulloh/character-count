@@ -1,0 +1,16 @@
+.letter-info {
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+.letter-info__heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.letter-info__count {
+  letter-spacing: -0.6px;
+}

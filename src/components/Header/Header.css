@@ -1,0 +1,21 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  margin-right: 16px;
+}
+
+.logo__img {
+  display: block;
+  width: 245px;
+  height: 40px;
+}

@@ -1,0 +1,14 @@
+.main-layout__container {
+  text-align: center;
+}
+
+.main-layout__heading {
+  width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  color: var(--color-heading);
+}

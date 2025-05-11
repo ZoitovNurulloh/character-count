@@ -1,0 +1,126 @@
+.letter-form {
+  text-align: left;
+  padding-bottom: 48px;
+}
+
+.letter-form__textarea-inner {
+  margin-bottom: 16px;
+}
+
+.letter-form__textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  padding: 20px;
+  background-color: var(--button-bg);
+  border-radius: 12px;
+  border: 2px solid var(--text-border);
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.6px;
+  color: var(--textarea-color);
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+.letter-form__textarea-warning{
+  color: var(--red);
+}
+
+.letter-form__textarea:hover {
+  background-color: var(--text-border);
+}
+
+.letter-form__textarea:focus-visible {
+  outline: none;
+  border: 2px solid rgb(194, 124, 248);
+  box-shadow: 0px 0px 10px 0px rgb(211, 160, 250);
+}
+
+.warning {
+  border: 2px solid rgb(218, 55, 1);
+  box-shadow: 0px 0px 10px 0px rgb(254, 129, 89);
+}
+
+.warning:focus-visible {
+  border: 2px solid var(--red);
+  box-shadow: 0px 0px 10px 0px rgb(254, 129, 89);
+}
+
+.letter-form__textarea::placeholder {
+  color: var(--textarea-color);
+}
+
+.letter-form__label-group {
+  display: flex;
+  align-items: center;
+  height: 29px;
+}
+
+.letter-form__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--color-heading);
+  cursor: pointer;
+  user-select: none;
+  padding-left:28px;
+}
+
+.letter-form__label:not(:last-child) {
+  margin-right: 24px;
+}
+
+.letter-form__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-heading);
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.letter-form__label .letter-form__input:checked ~ .checkmark {
+  background-color: var(--check-color);
+  border:1px solid var(--check-color);
+}
+
+.letter-form__label .letter-form__input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.letter-form__label .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.letter-form__limit--dn {
+  display: none;
+}
+
+.letter-form__limit {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--color-heading);
+}

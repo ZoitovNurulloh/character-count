@@ -1,0 +1,11 @@
+.button {
+  display: inline-block;
+  background-color: var(--button-bg);
+  border-radius: 8px;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.button__img {
+  display: block;
+}

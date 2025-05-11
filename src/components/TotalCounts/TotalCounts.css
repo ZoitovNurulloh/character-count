@@ -1,0 +1,30 @@
+.total-count {
+  width: 100%;
+  max-width: 320px;
+}
+
+
+.total-count__container {
+  padding: 16px;
+  border-radius: 12px;
+  color: var(--count-color);
+}
+
+.char {
+  background-color: var(--check-color);
+}
+
+.word {
+  background-color: var(--word-count);
+}
+
+.sentence {
+  background-color: var(--sentence-count);
+}
+
+.total-count__count {
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}

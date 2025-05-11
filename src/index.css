@@ -1,0 +1,160 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/public/fonts/DMSans-Bold.woff2') format('woff2'),
+      url('/public/fonts/DMSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/public/fonts/DMSans-Regular.woff2') format('woff2'),
+      url('/public/fonts/DMSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/public/fonts/DMSans-SemiBold.woff2') format('woff2'),
+      url('/public/fonts/DMSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/* CUSTOM PROPS */
+:root {
+  --white: #fff;
+  --text-color:#404254;
+  --button-bg:#F2F2F7;
+  --color-heading:#12131A;
+  --text-border:#E4E4EF;
+  --textarea-color:#2A2B37;
+  --check-color:#D3A0FA;
+  --count-color:#12131A;
+  --word-count:#FF9F00;
+  --sentence-count:#FE8159;
+  --border-color:#404254;
+  --red:#da3701;
+}
+
+
+/* GLOBAL */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing:inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--white);
+  color: var(--text-color);
+  font-family:"DM Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.6px;
+}
+
+.dark {
+  --white:#12131a;
+  --text-color:#e4e4ef;
+  --button-bg:#2A2B37;
+  --color-heading:#f2f2f7;
+  --text-border:rgb(42, 43, 55);
+  --textarea-color:#E4E4EF;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+/* AUTOFILL-STYLES */
+/*
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--heading-color);
+  -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+} */
+
+/* PLACEHOLDER STYLE */
+/*
+::placeholder {
+  color: rgba(52, 49, 61, 0.5);
+} */
+
+
+
+/* MAIN-CONTENT */
+
+.main-content {
+  flex-grow: 1;
+}
+
+
+
+/* RETINA BACKGROUND IMAGES */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+}
