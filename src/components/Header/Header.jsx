@@ -10,8 +10,9 @@ const Header = () => {
     <header className='header'>
       <div className="header__container container">
         <a href="#" className='header__logo logo'>
-          <img className='logo__img' src={showLogo ? "/public/images/logo-light-theme.svg" :
-            "/public/images/logo-dark-theme.svg"} alt="Logo" />
+          <img className='logo__img'
+          src={showLogo ? "public/images/logo-light-theme.svg" :
+            "public/images/logo-dark-theme.svg"} alt="Logo" />
         </a>
         <ThemeButton/>
       </div>
