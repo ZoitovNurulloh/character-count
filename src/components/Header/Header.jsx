@@ -11,8 +11,8 @@ const Header = () => {
       <div className="header__container container">
         <a href="#" className='header__logo logo'>
           <img className='logo__img'
-          src={showLogo ? "public/images/logo-light-theme.svg" :
-            "public/images/logo-dark-theme.svg"} alt="Logo" />
+          src={showLogo ? "/images/logo-light-theme.svg" :
+            "/images/logo-dark-theme.svg"} alt="Logo" />
         </a>
         <ThemeButton/>
       </div>
